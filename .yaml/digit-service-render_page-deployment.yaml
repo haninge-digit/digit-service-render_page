@@ -20,7 +20,7 @@ spec:
           image: ghcr.io/haninge-digit/digit-service-render_page:main
           imagePullPolicy: Always
           ports:
-            - name: gRPC
+            - name: grpc
               containerPort: 50051
               protocol: TCP
           env:
@@ -75,7 +75,7 @@ metadata:
   namespace: worker-services
 spec:
   ports:
-    - name: gRPC
+    - name: grpc
       protocol: TCP
       port: 50051
       targetPort: 50051
